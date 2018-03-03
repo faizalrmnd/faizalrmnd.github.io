@@ -1,12 +1,93 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>
-    Faizal Ramanda
-  </title>
-</head>
-<body>
-  <h1>Faizal Ramanda</h1>
-  <p>Halo halo halo</p>
-</body>
+  <head>
+    <title>Body Mass Index Calculator</title>
+    <meta charset="utf-8">
+    <script type = "text/javascript" src="BMIcalculator.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      .background-image{
+        background-image: url('https://trbbbbb.com/wp-content/uploads/data/2018/1/10/health-PIC-WSW3077863.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .container{
+        height: 100vh;
+      }
+      .form{
+        align-items: center;
+        margin: 200px 0 40px 0;
+        background-color: rgba(0, 0, 0, 0.5);;
+        color: #fff;
+        border-radius: 5%;
+      }
+      .input-group{
+        width: 100%;
+      }
+      input{
+        width: 100%;
+      }
+      button{
+        background-color: black;
+        margin: 30px 0;
+      }
+      .info{
+        text-align: center;
+        margin: 20px 0 40px 0;
+        background-color: rgba(0, 0, 0, 0.5);;
+        color: #fff;
+        border-radius: 5%;
+      }
+      .header-main{
+        background-color: rgba(0, 0, 0, 0.5);;
+      }
+      .by{
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header" class="header-main">
+      <div class="judul col-sm-6">
+        <h3>BODY MASS INDEX CALCULATOR</h3>
+      </div>
+      <div class="by col-sm-6">
+        <h6>By: Faizal Ramanda Sutansyah</h6>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <div class="row background-image">
+      <div class="container">
+        <div id="box" class="box">
+          <div class="col-sm-4"></div>
+          <div class="form col-sm-4">
+              <div class="input-group">
+                <h5>Height</h5>
+                <input type="text" id="tinggi" placeholder="Centimeter">
+              </div>
+              <div class="input-group">
+                <h5>Weight</h5>
+                <input type="text" id="berat" placeholder="Kg">
+              </div>
+              <div class="text-center">
+                <button type="button" name="calculate" onclick="calculate()">Calculate</button>
+              </div>
+          </div>
+          <div class="col-sm-4"></div>
+          <div class="clearfix"></div>
+          <div class="col-sm-4"></div>
+          <div class="info col-sm-4">
+              <h5>BMI Categories</h5>
+              <p>Underweight =< 18.5 </p>
+              <p>Normal weight = 18.5–24.9 </p>
+              <p>Overweight = 25–29.9 </p>
+              <p>Obesity = BMI of 30 or greater </p>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
